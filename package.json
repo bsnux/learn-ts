@@ -1,0 +1,25 @@
+{
+  "name": "learn-ts",
+  "version": "1.0.0",
+  "description": "Simple CLI for learning TypeScript",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "rm -rf build && mkdir build && tsc",
+    "bundle": "rm -rf dist && mkdir dist && webpack"
+  },
+  "keywords": [],
+  "author": "Arturo Fernandez",
+  "license": "GPL",
+  "dependencies": {
+    "commander": "^4.0.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/node": "^13.1.2",
+    "@types/node-fetch": "^2.5.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4"
+  }
+}
