@@ -63,3 +63,49 @@ $ docker . -f Dockerfile -t nbacli:v1 --no-cache
 ```
 $ docker run --rm -ti nbacli:v1
 ```
+
+## Project from scratch and dependencies
+
+Create a project from scratch:
+
+```
+$ npm init
+```
+
+Installing a dependency:
+
+```
+npm i --save <package-name>
+```
+
+Installing a dev dependency:
+
+```
+npm i --save-dev <package-name>
+```
+
+Installing type definitions for specific package:
+
+```
+npm install --save @types/<package-name>
+```
+
+## Security
+
+Checking with packages are outdated:
+
+```
+$ npm outdated --prod
+```
+
+Checking packages with security issues:
+
+```
+$ npm audit
+```
+
+Update packages with security issues:
+
+```
+$ npm update <package-name> --depth 4
+```
